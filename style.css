@@ -1,0 +1,118 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.preloader {
+  	top: 0;
+  	bottom: 0;
+  	position: fixed;
+  	width: 100%;
+  	min-height: 100%;
+  	background-color: #fff;
+  	z-index: 999;
+  	text-align: center;
+}
+
+.preloader .content {
+  	position: absolute;
+  	top: 40%;
+  	left: 50%;
+  	transform: translate(-50%, -40%);
+}
+
+.preloader p {
+	color: #888;
+	margin-top: -10px;
+}
+
+.preloader button {
+	width: 150px;
+	margin-bottom: 50px;
+}
+
+.preloader .medsos i {
+	color: #888;
+	font-size: 25px;
+	padding: 20px;
+}
+
+.header {
+	text-align: center;
+	top: 0;
+}
+
+.header img {
+	width: 200px;
+	margin-top: -50px;
+}
+
+.game {
+	width: 350px;
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -60%);
+	background-color: #fff;
+	padding: 20px;
+}
+
+.soal img {
+	width: 100%;
+}
+
+.jawab {
+	bottom: 10px;
+	position: fixed;
+	width: 100%;
+}
+
+.score {
+	display: none;
+	position: fixed;
+	top: 22%;
+	left: 50%;
+	transform: translate(-50%, -22%);
+	width: 50%;
+	background-color: #fff;
+	box-shadow: 2px 7px 12px #ccc;
+	padding: 20px;
+	text-align: center;
+	animation: score 1s ;
+	transition: .2s;
+}
+
+@keyframes score {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+.score img {
+	width: 150px;
+}
+
+.score h1 {
+	font-size: 50px;
+	padding-top: 20px;
+}
+.score p {
+	color: #888;
+}
+
+@media (max-width: 600px) {
+	.preloader .content {
+		width: 280px;
+	}
+
+	.preloader .content h2 {
+		font-size: 25px;
+	}
+
+	.game {
+		width: 280px;
+	}
+
+	.score {
+		width: 80%;
+	}
+}
